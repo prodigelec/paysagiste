@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
+/* ==========================================================================
+   DESIGN SYSTEM — Paysagiste (vert profond & crème, élégant / haut de gamme)
+   Contrastes vérifiés WCAG AA : textes ink/muted sur crème, crème/brass sur forest.
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Verts (marque) */
+  --forest-950: #0f1d16; /* fonds les plus sombres (footer) */
+  --forest-900: #14261d; /* fond principal des sections sombres */
+  --forest-800: #1c3328; /* cartes sur fond sombre */
+  --forest-700: #2a4a3a; /* hover, bordures sur fond sombre */
+  --moss: #5f7350;       /* accent végétal secondaire */
+  --sage: #a3b18a;       /* détails clairs sur fond sombre */
+
+  /* Crèmes (fonds clairs) */
+  --cream-50: #fbf8f2;   /* fond de page */
+  --cream-100: #f6f1e7;  /* sections alternées */
+  --sand: #e8dfcc;       /* bordures, séparateurs sur fond clair */
+
+  /* Laiton (accent premium) */
+  --brass: #b08d57;      /* sur fond sombre uniquement (contraste 5:1) */
+  --brass-light: #c9a96e;
+  --brass-dark: #7a5c30; /* version texte sur fond crème (contraste 5.4:1) */
+
+  /* Textes */
+  --ink: #1d211e;        /* texte principal sur crème */
+  --muted: #4f5a52;      /* texte secondaire sur crème */
+  --on-dark: #f6f1e7;    /* texte principal sur forest */
+  --on-dark-muted: #cfd5c8; /* texte secondaire sur forest */
+
+  /* États */
+  --success: #3f7d4f;
+  --error: #b3412e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-forest-950: var(--forest-950);
+  --color-forest-900: var(--forest-900);
+  --color-forest-800: var(--forest-800);
+  --color-forest-700: var(--forest-700);
+  --color-moss: var(--moss);
+  --color-sage: var(--sage);
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-sand: var(--sand);
+  --color-brass: var(--brass);
+  --color-brass-light: var(--brass-light);
+  --color-brass-dark: var(--brass-dark);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-on-dark: var(--on-dark);
+  --color-on-dark-muted: var(--on-dark-muted);
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  /* Typographies : titres serif élégants, texte sans-serif lisible */
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-manrope), system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream-50);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+::selection {
+  background: var(--sage);
+  color: var(--forest-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+/* Petit sur-titre en capitales espacées, utilisé au-dessus des titres de section */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Apparition douce du hero */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-up {
+    animation: none;
+  }
 }
