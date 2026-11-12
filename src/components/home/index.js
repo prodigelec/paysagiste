@@ -1,0 +1,9 @@
+export { default as HeroSection } from "./HeroSection";
+export { default as CommitmentsSection } from "./CommitmentsSection";
+export { default as ServicesSection } from "./ServicesSection";
+export { default as AboutSection } from "./AboutSection";
+export { default as ProcessSection } from "./ProcessSection";
+export { default as RealisationsSection } from "./RealisationsSection";
+export { default as TaxCreditSection } from "./TaxCreditSection";
+export { default as ZonesSection } from "./ZonesSection";
+export { default as ContactCTASection } from "./ContactCTASection";
