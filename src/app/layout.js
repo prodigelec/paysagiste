@@ -31,6 +31,9 @@ export const metadata = {
   },
   description:
     "Paysagiste pour particuliers en Eure-et-Loir (28) et Yvelines (78) : création de jardins, terrasses, clôtures, arrosage, engazonnement, entretien, taille de haies et élagage. Devis gratuit.",
+  // Version d'aperçu pour le client : non indexée par les moteurs de recherche.
+  // TODO : retirer ce bloc à la mise en ligne définitive.
+  robots: { index: false, follow: false },
   openGraph: {
     siteName: siteConfig.name,
     locale: "fr_FR",
