@@ -5,7 +5,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 
 export default function HeroSection() {
   return (
-    <section className="relative isolate flex min-h-[calc(100svh-5rem)] items-end overflow-hidden bg-forest-900">
+    <section className="relative isolate flex min-h-svh items-end overflow-hidden bg-forest-900">
       <Image
         src={heroImg}
         alt="Allée de jardin bordée de haies taillées et de rosiers en fleurs"
@@ -24,8 +24,13 @@ export default function HeroSection() {
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-gradient-to-r from-forest-950/70 via-forest-950/20 to-transparent"
       />
+      {/* Assombrit le haut pour la lisibilité de la navigation transparente */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 -z-10 h-64 bg-gradient-to-b from-forest-950/75 to-transparent"
+      />
 
-      <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-32 md:px-8 md:pb-24">
+      <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-44 md:px-8 md:pb-24">
         <div className="animate-fade-up max-w-3xl">
           <p className="eyebrow mb-6 text-brass-light">{siteConfig.tagline}</p>
           <h1 className="text-5xl text-on-dark sm:text-6xl lg:text-7xl">
