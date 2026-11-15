@@ -32,7 +32,10 @@ export default function HeroSection() {
 
       <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-44 md:px-8 md:pb-24">
         <div className="animate-fade-up max-w-3xl">
-          <p className="eyebrow mb-6 text-brass-light">{siteConfig.tagline}</p>
+          <p className="eyebrow mb-6 inline-flex items-center gap-3 rounded-full border border-on-dark/15 bg-forest-950/45 px-5 py-2.5 !text-[0.75rem] !font-bold text-brass-light backdrop-blur-md md:!text-[0.8rem]">
+            <span aria-hidden="true" className="h-px w-6 shrink-0 bg-brass-light" />
+            {siteConfig.tagline}
+          </p>
           <h1 className="text-5xl text-on-dark sm:text-6xl lg:text-7xl">
             Des jardins pensés pour être vécus.
           </h1>
