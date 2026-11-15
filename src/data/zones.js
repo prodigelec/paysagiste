@@ -1,9 +1,9 @@
 // Principales communes desservies (pages villes à créer plus tard).
-// À ajuster selon la ville du siège et le rayon réel d’intervention.
+// Siège à Broué (28410). À ajuster selon le rayon réel d’intervention.
 export const zones = [
   {
     department: "Eure-et-Loir (28)",
-    cities: ["Chartres", "Dreux", "Épernon", "Maintenon", "Nogent-le-Roi", "Anet", "Lucé", "Vernouillet"],
+    cities: ["Broué", "Dreux", "Chartres", "Épernon", "Maintenon", "Nogent-le-Roi", "Anet", "Lucé", "Vernouillet"],
   },
   {
     department: "Yvelines (78)",

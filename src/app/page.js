@@ -12,7 +12,7 @@ import {
 
 export const metadata = {
   title: {
-    absolute: "Paysagiste en Eure-et-Loir (28) et Yvelines (78) · Création et entretien de jardins",
+    absolute: "Tellier Paysage · Paysagiste à Broué, Eure-et-Loir (28) et Yvelines (78)",
   },
   alternates: { canonical: "/" },
 };

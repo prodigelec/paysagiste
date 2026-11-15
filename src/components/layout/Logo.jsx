@@ -1,23 +1,33 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
+import emblemeClair from "@/assets/logo/embleme-clair.png";
+import emblemeFonce from "@/assets/logo/embleme-fonce.png";
 
-// Logo typographique provisoire, en attendant le logo du client.
-export default function Logo({ light = false, centered = false }) {
+// Emblème du logo Tellier Paysage + nom en texte (net à toutes les tailles).
+// Version claire sur fond sombre, version foncée sur fond crème.
+export default function Logo({ light = false }) {
   return (
-    <Link
-      href="/"
-      aria-label={`${siteConfig.name}, accueil`}
-      className={`flex flex-col leading-none ${centered ? "items-center text-center" : ""}`}
-    >
-      <span
-        className={`font-serif text-2xl font-semibold uppercase tracking-[0.12em] transition-colors md:text-[1.7rem] ${light ? "text-on-dark" : "text-forest-900"}`}
-      >
-        {siteConfig.name}
-      </span>
-      <span
-        className={`eyebrow mt-1.5 !text-[0.6rem] transition-colors ${light ? "text-brass-light" : "text-brass-dark"}`}
-      >
-        Paysagiste · 28 & 78
+    <Link href="/" aria-label={`${siteConfig.name}, accueil`} className="flex items-center gap-3">
+      <Image
+        src={light ? emblemeClair : emblemeFonce}
+        alt=""
+        priority
+        className="h-12 w-auto xl:h-14"
+      />
+      <span className="flex flex-col leading-none">
+        <span
+          className={`font-serif text-2xl font-medium uppercase tracking-[0.2em] transition-colors xl:text-[1.7rem] ${light ? "text-on-dark" : "text-forest-950"}`}
+        >
+          Tellier
+        </span>
+        <span className="mt-1 flex items-center gap-2" aria-hidden="true">
+          <span className="h-px w-3 bg-olive" />
+          <span className={`text-[0.65rem] font-medium uppercase tracking-[0.42em] ${light ? "text-olive-light" : "text-olive"}`}>
+            Paysage
+          </span>
+          <span className="h-px w-3 bg-olive" />
+        </span>
       </span>
     </Link>
   );

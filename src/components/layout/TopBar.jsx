@@ -11,7 +11,7 @@ export default function TopBar() {
             {siteConfig.phone}
           </a>
           <span aria-hidden="true" className="hidden sm:inline">·</span>
-          <span className="hidden sm:inline">Eure-et-Loir & Yvelines</span>
+          <span className="hidden sm:inline">Basé à {siteConfig.city} · Eure-et-Loir & Yvelines</span>
         </p>
         <Link href="/contact" className="font-semibold text-brass-light transition-colors hover:text-on-dark">
           Devis gratuit

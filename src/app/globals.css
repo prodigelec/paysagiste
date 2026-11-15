@@ -14,6 +14,12 @@
   --moss: #5f7350;       /* accent végétal secondaire */
   --sage: #a3b18a;       /* détails clairs sur fond sombre */
 
+  /* Couleurs du logo Tellier Paysage */
+  --olive: #4e6034;       /* vert du logo, version texte sur crème (contraste 6.5:1) */
+  --olive-brand: #627443; /* vert exact du logo (montagnes, chemin) */
+  --olive-light: #9aab72; /* vert du logo éclairci, lisible sur fond sombre */
+  --seal-red: #d12323;    /* rouge du sceau et de la feuille : touches d'accent uniquement */
+
   /* Crèmes (fonds clairs) */
   --cream-50: #fbf8f2;   /* fond de page */
   --cream-100: #f6f1e7;  /* sections alternées */
@@ -42,6 +48,10 @@
   --color-forest-700: var(--forest-700);
   --color-moss: var(--moss);
   --color-sage: var(--sage);
+  --color-olive: var(--olive);
+  --color-olive-brand: var(--olive-brand);
+  --color-olive-light: var(--olive-light);
+  --color-seal-red: var(--seal-red);
   --color-cream-50: var(--cream-50);
   --color-cream-100: var(--cream-100);
   --color-sand: var(--sand);

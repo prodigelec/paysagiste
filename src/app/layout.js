@@ -20,7 +20,7 @@ const manrope = Manrope({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#14261d",
+  themeColor: "#0f1d16",
 };
 
 export const metadata = {
@@ -30,7 +30,7 @@ export const metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Paysagiste pour particuliers en Eure-et-Loir (28) et Yvelines (78) : création de jardins, terrasses, clôtures, arrosage, engazonnement, entretien, taille de haies et élagage. Devis gratuit.",
+    "Tellier Paysage, paysagiste à Broué (28) pour les particuliers en Eure-et-Loir et Yvelines : création de jardins, terrasses, clôtures, arrosage, engazonnement, entretien, taille de haies et élagage. Devis gratuit.",
   // Version d'aperçu pour le client : non indexée par les moteurs de recherche.
   // TODO : retirer ce bloc à la mise en ligne définitive.
   robots: { index: false, follow: false },
