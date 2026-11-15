@@ -27,7 +27,7 @@ export default function HeroSection() {
       {/* Assombrit le haut pour la lisibilité de la navigation transparente */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 -z-10 h-64 bg-gradient-to-b from-forest-950/75 to-transparent"
+        className="absolute inset-x-0 top-0 -z-10 h-72 bg-gradient-to-b from-forest-950/85 via-forest-950/40 to-transparent"
       />
 
       <div className="mx-auto w-full max-w-7xl px-5 pb-16 pt-44 md:px-8 md:pb-24">

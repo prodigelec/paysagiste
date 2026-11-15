@@ -21,12 +21,14 @@ export default function Logo({ light = false }) {
         >
           Tellier
         </span>
-        <span className="mt-1 flex items-center gap-2" aria-hidden="true">
-          <span className="h-px w-3 bg-olive" />
-          <span className={`text-[0.65rem] font-medium uppercase tracking-[0.42em] ${light ? "text-olive-light" : "text-olive"}`}>
+        <span className="mt-1.5 flex items-center gap-2" aria-hidden="true">
+          <span className={`h-px w-4 ${light ? "bg-olive-light" : "bg-olive"}`} />
+          <span
+            className={`text-[0.8rem] font-bold uppercase tracking-[0.36em] xl:text-[0.85rem] ${light ? "text-on-dark [text-shadow:0_1px_8px_rgb(0_0_0/0.7)]" : "text-olive"}`}
+          >
             Paysage
           </span>
-          <span className="h-px w-3 bg-olive" />
+          <span className={`h-px w-4 ${light ? "bg-olive-light" : "bg-olive"}`} />
         </span>
       </span>
     </Link>
