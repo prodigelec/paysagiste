@@ -1,13 +1,13 @@
-// Configuration centrale du site.
-// TODO : remplacer les valeurs provisoires dès que le client les transmet
-// (nom, logo, ville du siège, téléphone, e-mail, domaine).
+// Configuration centrale du site (coordonnées issues de la carte de visite).
 export const siteConfig = {
-  name: "Atelier Paysage", // nom provisoire
-  tagline: "Paysagiste en Eure-et-Loir et Yvelines",
-  city: "", // ville du siège : à définir
-  phone: "06 00 00 00 00", // provisoire
-  phoneHref: "tel:+33600000000",
-  email: "contact@exemple.fr", // provisoire
+  name: "Tellier Paysage",
+  slogan: "Créateur d’espaces naturels",
+  tagline: "Paysagiste à Broué, en Eure-et-Loir et Yvelines",
+  city: "Broué",
+  postalCode: "28410",
+  phone: "07 85 93 53 15",
+  phoneHref: "tel:+33785935315",
+  email: "tellier.paysage3@gmail.com",
   url: "https://www.exemple.fr", // domaine : à définir
   departments: ["Eure-et-Loir (28)", "Yvelines (78)"],
   // Afficher le bloc « crédit d'impôt 50 % » uniquement si la société est

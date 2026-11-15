@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logoComplet from "@/assets/logo/logo-complet-clair.png";
 import { siteConfig, navLinks } from "@/lib/site";
 import CopyrightYear from "./CopyrightYear";
 
@@ -7,8 +9,12 @@ export default function Footer() {
     <footer className="bg-forest-950 text-on-dark-muted">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-serif text-3xl text-on-dark">{siteConfig.name}</p>
-          <p className="mt-3 max-w-xs leading-relaxed">
+          <Image
+            src={logoComplet}
+            alt={`${siteConfig.name}, ${siteConfig.slogan}`}
+            className="h-auto w-44"
+          />
+          <p className="mt-6 max-w-xs leading-relaxed">
             Création et entretien de jardins pour les particuliers en {siteConfig.departments.join(" et ")}.
           </p>
         </div>
@@ -43,6 +49,9 @@ export default function Footer() {
               <a href={`mailto:${siteConfig.email}`} className="transition-colors hover:text-on-dark">
                 {siteConfig.email}
               </a>
+            </li>
+            <li>
+              {siteConfig.postalCode} {siteConfig.city}
             </li>
             <li>Intervention en {siteConfig.departments.join(" et ")}</li>
           </ul>

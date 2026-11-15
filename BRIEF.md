@@ -1,4 +1,4 @@
-# Site vitrine — société de paysagiste (nom à définir)
+# Site vitrine — Tellier Paysage
 
 Dossier créé le 2026-11-12. Nom du dossier provisoire : à renommer quand la société aura son nom.
 
@@ -30,9 +30,10 @@ Dossier créé le 2026-11-12. Nom du dossier provisoire : à renommer quand la s
 
 ## Réponses au brief (en cours)
 
-- **Nom et logo** : pas encore transmis par le client, on garde un nom provisoire. À redemander.
+- **Nom et logo** (reçus le 2026-11-15) : **Tellier Paysage**, slogan « Créateur d’espaces naturels ». Logo : cercle au pinceau blanc, montagnes et chemin vert olive, branche fleurie, feuille rouge, sceau rouge 庭園 (jardin), sur fond noir. Fichiers dans `src/assets/logo/`.
+- **Coordonnées** : 07 85 93 53 15 · tellier.paysage3@gmail.com · 28410 Broué.
 - **Activités** : toutes : création de jardins, entretien (tonte, taille de haies), élagage et abattage, clôtures, terrasses et allées, arrosage automatique, engazonnement. Pas d'activité principale précisée.
-- **Zone d'intervention** : Eure-et-Loir (28) et Yvelines (78). Ville du siège à préciser.
+- **Zone d'intervention** : Eure-et-Loir (28) et Yvelines (78), siège à Broué.
 - **Public cible** : particuliers en priorité (entreprises / collectivités possibles mais secondaires).
 - **Contenus** : rien de fourni. Textes à rédiger par nous, photos de banque d'images en attendant les vraies réalisations, pas d'avis clients pour l'instant.
 - **Ambiance couleurs** : élégant, haut de gamme : vert profond + crème. Pas de site de référence fourni.
