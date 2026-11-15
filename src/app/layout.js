@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
 import Header from "@/components/layout/Header";
@@ -11,8 +11,9 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+// Sans-serif proche d'Avenir, la police de « PAYSAGE » sur le logo et la carte de visite
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
   display: "swap",
 });
@@ -43,7 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className={`${cormorant.variable} ${manrope.variable} antialiased`}>
+    <html lang="fr" className={`${cormorant.variable} ${nunitoSans.variable} antialiased`}>
       <body className="flex min-h-screen flex-col">
         <a
           href="#contenu"

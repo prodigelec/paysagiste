@@ -67,7 +67,7 @@
 
   /* Typographies : titres serif élégants, texte sans-serif lisible */
   --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-manrope), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: var(--font-nunito-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 html {
