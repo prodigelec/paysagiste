@@ -55,7 +55,7 @@ export default function MainNav({ topBar }) {
           <ul className="hidden items-center gap-8 xl:flex 2xl:gap-10">{renderLinks(leftLinks)}</ul>
 
           <div className="justify-self-start xl:justify-self-center">
-            <Logo light={transparent} centered />
+            <Logo light={transparent} />
           </div>
 
           <ul className="hidden items-center justify-end gap-8 xl:flex 2xl:gap-10">{renderLinks(rightLinks)}</ul>
