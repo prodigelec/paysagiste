@@ -2,7 +2,8 @@
 export const siteConfig = {
   name: "Tellier Paysage",
   slogan: "Créateur d’espaces naturels",
-  tagline: "Paysagiste à Broué, en Eure-et-Loir et Yvelines",
+  // Tirets insécables (‑) : « Eure-et-Loir » ne se coupe pas en fin de ligne
+  tagline: "Paysagiste à Broué, en Eure‑et‑Loir et Yvelines",
   city: "Broué",
   postalCode: "28410",
   phone: "07 85 93 53 15",
