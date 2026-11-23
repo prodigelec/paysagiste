@@ -1,9 +1,9 @@
 // Bandeau des engagements, juste sous le hero : rassure le particulier.
 const commitments = [
-  { title: "Devis gratuit", text: "Visite sur place et proposition détaillée, sans engagement." },
+  { title: "Devis gratuit", text: "Déplacement offert et devis détaillé sous 5 jours, sans engagement." },
   { title: "Un seul interlocuteur", text: "La même personne vous suit de la conception au suivi." },
   { title: "Travail soigné", text: "Chantier propre, végétaux adaptés au sol et au climat local." },
-  { title: "Proche de chez vous", text: "Intervention dans tout l’Eure-et-Loir et les Yvelines." },
+  { title: "Proche de chez vous", text: "Intervention dans un rayon de 30 km autour de Broué." },
 ];
 
 export default function CommitmentsSection() {

@@ -3,7 +3,7 @@ import aboutImg from "@/assets/images/apropos-mains-terre.jpg";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ButtonLink from "@/components/ui/ButtonLink";
 
-// Texte générique en attendant l’histoire et le parcours réels du gérant.
+// Parcours à compléter quand le client aura renvoyé ses réponses 05 et 06 en entier.
 export default function AboutSection() {
   return (
     <section aria-labelledby="about-title" className="bg-cream-100 py-24 md:py-32">
@@ -26,6 +26,11 @@ export default function AboutSection() {
             title="Le goût du travail bien fait, au rythme du vivant."
           />
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted">
+            <p>
+              Fort de cinq années d’expérience au sein d’une entreprise de paysagisme,
+              Tellier Paysage met aujourd’hui ce savoir-faire à votre service, avec un seul
+              interlocuteur du premier rendez-vous jusqu’à l’entretien de votre jardin.
+            </p>
             <p>
               Un beau jardin ne se résume pas à une belle image le jour de la livraison.
               Il doit vieillir avec élégance, s’adapter à votre façon de vivre et rester
