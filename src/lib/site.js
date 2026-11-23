@@ -9,11 +9,12 @@ export const siteConfig = {
   phone: "07 85 93 53 15",
   phoneHref: "tel:+33785935315",
   email: "tellier.paysage3@gmail.com",
-  url: "https://www.exemple.fr", // domaine : à définir
+  url: "https://www.tellier-paysage.fr", // domaine souhaité par le client : à réserver
   departments: ["Eure-et-Loir (28)", "Yvelines (78)"],
-  // Afficher le bloc « crédit d'impôt 50 % » uniquement si la société est
-  // déclarée en services à la personne. À confirmer avec le client.
+  // Déclaration services à la personne acceptée : active le bloc « crédit d'impôt 50 % ».
   servicesALaPersonne: true,
+  sapNumber: "", // numéro de déclaration SAP : à fournir par le client
+  serviceRadiusKm: 30,
 };
 
 export const navLinks = [

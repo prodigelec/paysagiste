@@ -9,7 +9,7 @@ export default function ZonesSection() {
           id="zones-title"
           eyebrow="Zone d’intervention"
           title="Votre paysagiste en Eure-et-Loir et dans les Yvelines."
-          intro="Nous intervenons chez les particuliers dans un large secteur autour de nos bases. Votre commune n’apparaît pas ? Contactez-nous, nous vous dirons si nous pouvons venir."
+          intro="Nous intervenons dans un rayon d’environ 30 km autour de Broué, entre Dreux, Houdan et Rambouillet. Votre commune n’apparaît pas ? Contactez-nous, nous vous dirons si nous pouvons venir."
         />
         <div className="grid gap-10 sm:grid-cols-2">
           {zones.map((zone) => (
