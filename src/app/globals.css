@@ -125,11 +125,26 @@ h3 {
   animation: fade-up 0.8s ease-out both;
 }
 
+/* Léger zoom lent sur la photo active du carrousel du hero */
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 8s ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-  .animate-fade-up {
+  .animate-fade-up,
+  .animate-slow-zoom {
     animation: none;
   }
 }
