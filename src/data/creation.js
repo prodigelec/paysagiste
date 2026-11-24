@@ -5,7 +5,20 @@ import clotureImg from "@/assets/images/prestations/cloture-bois.jpg";
 import bassinImg from "@/assets/images/prestations/bassin.jpg";
 import gazonImg from "@/assets/images/prestations/engazonnement-rouleau.jpg";
 
-// Prestations de la page « Création & aménagement ».
+// Contenus de la page « Création & aménagement ».
+export const creationIntro = {
+  paragraphs: [
+    "Que vous partiez d’un terrain nu après une construction ou que vous souhaitiez transformer un jardin existant, nous vous accompagnons sur l’ensemble du projet : plantations, terrasses, allées, maçonnerie, clôtures et points d’eau.",
+    "Notre objectif : un extérieur beau dès la fin du chantier, qui s’embellit avec les saisons et reste simple à entretenir.",
+  ],
+  points: [
+    { title: "Un projet sur mesure", text: "Chaque jardin part de votre terrain, de vos envies et de votre façon de vivre dehors." },
+    { title: "Des choix durables", text: "Matériaux solides et végétaux adaptés au sol et au climat d’Eure-et-Loir et des Yvelines." },
+    { title: "Un seul interlocuteur", text: "La même personne vous accompagne de la première visite à la fin du chantier." },
+  ],
+};
+
+// Prestations détaillées.
 // Photos d’illustration (Unsplash) à remplacer par celles des chantiers du client.
 export const creationServices = [
   {

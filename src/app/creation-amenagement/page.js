@@ -1,6 +1,9 @@
 import heroImg from "@/assets/images/prestations/allee-jardin-structure.jpg";
+import { creationIntro, creationServices, creationFaq } from "@/data/creation";
 import PageHero from "@/components/ui/PageHero";
-import { CreationIntro, CreationServices, CreationFaq } from "@/components/creation";
+import PageIntro from "@/components/ui/PageIntro";
+import ServiceDetailsSection from "@/components/ui/ServiceDetailsSection";
+import FaqSection from "@/components/ui/FaqSection";
 import { ProcessSection, ContactCTASection } from "@/components/home";
 
 export const metadata = {
@@ -21,10 +24,21 @@ export default function CreationPage() {
         imageAlt="Allée pavée sinueuse entre des haies taillées et des massifs de graminées"
         breadcrumb="Création & aménagement"
       />
-      <CreationIntro />
-      <CreationServices />
+      <PageIntro
+        id="creation-intro-title"
+        eyebrow="Notre savoir-faire"
+        title="Un jardin qui vous ressemble, pensé pour durer."
+        {...creationIntro}
+      />
+      <ServiceDetailsSection
+        id="creation-services-title"
+        eyebrow="Nos prestations"
+        title="Tout pour créer et aménager votre extérieur."
+        intro="Chaque projet peut associer plusieurs de ces savoir-faire : nous coordonnons l’ensemble pour un résultat cohérent."
+        services={creationServices}
+      />
       <ProcessSection />
-      <CreationFaq />
+      <FaqSection id="creation-faq-title" title="Vos questions sur la création de jardin." items={creationFaq} />
       <ContactCTASection />
     </>
   );
