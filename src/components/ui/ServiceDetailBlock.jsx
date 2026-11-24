@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Une prestation : photo d’un côté, texte et détails de l’autre (sens alterné).
-export default function CreationServiceBlock({ service, index }) {
+export default function ServiceDetailBlock({ service, index }) {
   const reversed = index % 2 === 1;
 
   return (
@@ -16,7 +16,7 @@ export default function CreationServiceBlock({ service, index }) {
           fill
           placeholder="blur"
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="object-cover"
+          className={`object-cover ${service.imagePosition ?? ""}`}
         />
       </div>
 
