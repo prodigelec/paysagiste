@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site";
 import HeroSlideImages from "./HeroSlideImages";
 import HeroSlideText from "./HeroSlideText";
 import HeroIndicators from "./HeroIndicators";
+import HeroSapNote from "./HeroSapNote";
 
 const INTERVAL_MS = 6500;
 
@@ -46,6 +47,7 @@ export default function HeroCarousel({ actions }) {
           </h1>
           <HeroSlideText slides={heroSlides} current={current} />
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">{actions}</div>
+          <HeroSapNote />
         </div>
       </div>
 

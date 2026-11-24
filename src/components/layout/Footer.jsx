@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoComplet from "@/assets/logo/logo-complet-clair.png";
 import { siteConfig, navLinks } from "@/lib/site";
+import SapBadge from "@/components/ui/SapBadge";
 import CopyrightYear from "./CopyrightYear";
 
 export default function Footer() {
@@ -55,6 +56,9 @@ export default function Footer() {
             </li>
             <li>Intervention en {siteConfig.departments.join(" et ")}</li>
           </ul>
+          <div className="mt-6 flex">
+            <SapBadge className="w-24" />
+          </div>
         </div>
       </div>
 
