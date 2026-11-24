@@ -23,6 +23,7 @@ export default function CreationPage() {
         image={heroImg}
         imageAlt="Allée pavée sinueuse entre des haies taillées et des massifs de graminées"
         breadcrumb="Création & aménagement"
+        devis="creation"
       />
       <PageIntro
         id="creation-intro-title"
@@ -36,6 +37,7 @@ export default function CreationPage() {
         title="Tout pour créer et aménager votre extérieur."
         intro="Chaque projet peut associer plusieurs de ces savoir-faire : nous coordonnons l’ensemble pour un résultat cohérent."
         services={creationServices}
+        devis="creation"
       />
       <ProcessSection />
       <FaqSection id="creation-faq-title" title="Vos questions sur la création de jardin." items={creationFaq} />

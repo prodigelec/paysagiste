@@ -28,3 +28,6 @@ export const navLinks = [
   { href: "/votre-projet", label: "Votre projet" },
   { href: "/a-propos", label: "À propos" },
 ];
+
+// Lien vers le formulaire de devis, avec le type de demande pré-sélectionné.
+export const devisHref = (prestation) => (prestation ? `/contact?prestation=${prestation}` : "/contact");

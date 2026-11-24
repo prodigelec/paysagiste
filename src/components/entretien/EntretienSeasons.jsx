@@ -1,5 +1,7 @@
 import { entretienSeasons } from "@/data/entretien";
 import SectionHeading from "@/components/ui/SectionHeading";
+import ButtonLink from "@/components/ui/ButtonLink";
+import { devisHref } from "@/lib/site";
 
 // Calendrier des travaux d’entretien, saison par saison.
 export default function EntretienSeasons() {
@@ -28,6 +30,9 @@ export default function EntretienSeasons() {
             </li>
           ))}
         </ol>
+        <div className="mt-16">
+          <ButtonLink href={devisHref("entretien")}>Mettre en place un contrat d’entretien</ButtonLink>
+        </div>
       </div>
     </section>
   );
