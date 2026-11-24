@@ -23,10 +23,10 @@ export default function Home() {
       <HeroSection />
       <CommitmentsSection />
       <ServicesSection />
+      <TaxCreditSection />
       <AboutSection />
       <ProcessSection />
       <RealisationsSection />
-      <TaxCreditSection />
       <ZonesSection />
       <ContactCTASection />
     </main>
