@@ -1,5 +1,10 @@
 import { projectSteps } from "@/data/projet";
+import Link from "next/link";
+import { siteConfig } from "@/lib/site";
 import SectionHeading from "@/components/ui/SectionHeading";
+
+const linkClass =
+  "border-b border-brass-dark pb-1 text-sm font-semibold tracking-wide text-brass-dark transition-colors hover:text-forest-900";
 
 // Déroulé détaillé d’un projet, présenté en frise verticale numérotée.
 export default function ProjectSteps() {
@@ -27,6 +32,14 @@ export default function ProjectSteps() {
               </p>
               <h3 className="mt-3 text-2xl text-forest-900 md:text-3xl">{step.title}</h3>
               <p className="mt-3 max-w-xl text-lg leading-relaxed text-muted">{step.text}</p>
+              {step.contactLinks && (
+                <div className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
+                  <Link href="/contact" className={linkClass}>Remplir le formulaire</Link>
+                  <a href={siteConfig.phoneHref} className={`${linkClass} lining-nums`}>
+                    Appeler le {siteConfig.phone}
+                  </a>
+                </div>
+              )}
             </li>
           ))}
         </ol>

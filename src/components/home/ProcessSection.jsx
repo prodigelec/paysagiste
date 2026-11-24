@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/ui/SectionHeading";
+import ButtonLink from "@/components/ui/ButtonLink";
 
 const steps = [
   { title: "La rencontre", text: "Nous venons chez vous pour découvrir le terrain et écouter vos envies, vos usages et vos contraintes." },
@@ -28,6 +29,9 @@ export default function ProcessSection() {
             </li>
           ))}
         </ol>
+        <div className="mt-16">
+          <ButtonLink href="/contact">Démarrer mon projet</ButtonLink>
+        </div>
       </div>
     </section>
   );

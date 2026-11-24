@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+import { devisHref } from "@/lib/site";
 
 // Une prestation : photo d’un côté, texte et détails de l’autre (sens alterné).
-export default function ServiceDetailBlock({ service, index }) {
+export default function ServiceDetailBlock({ service, index, devis }) {
   const reversed = index % 2 === 1;
 
   return (
@@ -34,6 +36,12 @@ export default function ServiceDetailBlock({ service, index }) {
             </li>
           ))}
         </ul>
+        <Link
+          href={devisHref(service.devis ?? devis)}
+          className="mt-8 inline-block border-b border-brass-dark pb-1 text-sm font-semibold tracking-wide text-brass-dark transition-colors hover:text-forest-900"
+        >
+          Demander un devis pour cette prestation
+        </Link>
       </div>
     </article>
   );

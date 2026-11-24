@@ -2,6 +2,7 @@
 export const projectSteps = [
   {
     title: "Vous nous contactez",
+    contactLinks: true, // affiche « Remplir le formulaire » et « Appeler »
     text: "Par téléphone, par message ou via le formulaire du site. Décrivez-nous en quelques mots votre jardin et vos envies : nous vous rappelons rapidement pour convenir d’une visite.",
   },
   {

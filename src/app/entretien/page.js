@@ -24,6 +24,7 @@ export default function EntretienPage() {
         image={heroImg}
         imageAlt="Grande pelouse soignée bordée d’arbustes taillés en boule"
         breadcrumb="Entretien"
+        devis="entretien"
       />
       <PageIntro
         id="entretien-intro-title"
@@ -38,6 +39,7 @@ export default function EntretienPage() {
         title="Tout l’entretien de votre extérieur."
         intro="Combinez librement ces prestations, en intervention ponctuelle ou dans le cadre d’un contrat à l’année."
         services={entretienServices}
+        devis="entretien"
       />
       <EntretienSeasons />
       <FaqSection id="entretien-faq-title" title="Vos questions sur l’entretien de jardin." items={entretienFaq} />

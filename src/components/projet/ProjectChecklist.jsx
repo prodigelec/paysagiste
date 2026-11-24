@@ -1,5 +1,6 @@
 import { projectChecklist } from "@/data/projet";
 import SectionHeading from "@/components/ui/SectionHeading";
+import ButtonLink from "@/components/ui/ButtonLink";
 
 // Ce qu’il est utile de préparer avant de demander un devis.
 export default function ProjectChecklist() {
@@ -21,6 +22,9 @@ export default function ProjectChecklist() {
             </li>
           ))}
         </ul>
+        <div className="mt-16">
+          <ButtonLink href="/contact">Envoyer ma demande</ButtonLink>
+        </div>
       </div>
     </section>
   );

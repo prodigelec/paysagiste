@@ -24,6 +24,7 @@ export default function VotreProjetPage() {
         image={heroImg}
         imageAlt="Maison contemporaine entourée d’une pelouse et d’un grand arbre au crépuscule"
         breadcrumb="Votre projet"
+        devis
       />
       <CommitmentsSection />
       <ProjectSteps />

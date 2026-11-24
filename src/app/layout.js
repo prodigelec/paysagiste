@@ -3,6 +3,7 @@ import "./globals.css";
 import { siteConfig } from "@/lib/site";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "sonner";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -57,6 +58,12 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        {/* Notifications (succès / erreur) aux couleurs du site */}
+        <Toaster
+          position="bottom-right"
+          richColors
+          toastOptions={{ style: { fontFamily: "var(--font-sans)", borderRadius: "2px" } }}
+        />
       </body>
     </html>
   );

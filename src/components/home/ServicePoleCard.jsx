@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { devisHref } from "@/lib/site";
 
 export default function ServicePoleCard({ pole }) {
   return (
@@ -25,12 +26,20 @@ export default function ServicePoleCard({ pole }) {
             </li>
           ))}
         </ul>
-        <Link
-          href={`/${pole.slug}`}
-          className="mt-8 inline-block self-start border-b border-brass pb-1 text-sm font-semibold tracking-wide text-brass-light transition-colors hover:text-on-dark"
-        >
-          Découvrir {pole.title.toLowerCase()}
-        </Link>
+        <div className="mt-auto flex flex-wrap gap-x-8 gap-y-4 pt-8">
+          <Link
+            href={`/${pole.slug}`}
+            className="border-b border-brass pb-1 text-sm font-semibold tracking-wide text-brass-light transition-colors hover:text-on-dark"
+          >
+            Découvrir {pole.title.toLowerCase()}
+          </Link>
+          <Link
+            href={devisHref(pole.devis)}
+            className="border-b border-on-dark/40 pb-1 text-sm font-semibold tracking-wide text-on-dark transition-colors hover:border-brass hover:text-brass-light"
+          >
+            Demander un devis
+          </Link>
+        </div>
       </div>
     </article>
   );

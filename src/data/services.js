@@ -5,6 +5,7 @@ import entretienImg from "@/assets/images/entretien-taille.jpg";
 export const servicePoles = [
   {
     slug: "creation-amenagement",
+    devis: "creation",
     title: "Création & aménagement",
     intro:
       "De l’esquisse à la dernière plantation, nous dessinons et réalisons un jardin qui vous ressemble, pensé pour durer.",
@@ -21,6 +22,7 @@ export const servicePoles = [
   },
   {
     slug: "entretien",
+    devis: "entretien",
     title: "Entretien de jardin",
     intro:
       "Un jardin soigné toute l’année, sans y penser : nous intervenons ponctuellement ou dans le cadre d’un contrat d’entretien.",
