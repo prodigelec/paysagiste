@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig } from "@/lib/site";
+import { siteConfig, devisHref } from "@/lib/site";
 import SapBadge from "@/components/ui/SapBadge";
 
 // Affiché uniquement si la société est déclarée en services à la personne.
@@ -26,10 +26,10 @@ export default function TaxCreditSection() {
         <div className="flex items-center gap-8 lg:flex-col lg:gap-5">
           <SapBadge className="w-28 md:w-32" numberClassName="text-muted" />
           <Link
-            href="/credit-impot"
+            href={devisHref("entretien")}
             className="border-b border-brass-dark pb-1 text-sm font-semibold tracking-wide text-brass-dark transition-colors hover:text-forest-900"
           >
-            Comment ça marche ?
+            Demander un devis entretien
           </Link>
         </div>
       </div>

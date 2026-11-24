@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 
 // Questions fréquentes en accordéon natif (<details>) : accessible, sans JavaScript.
@@ -5,7 +6,16 @@ export default function FaqSection({ id, title, items }) {
   return (
     <section aria-labelledby={id} className="py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 md:px-8 lg:grid-cols-[2fr_3fr] lg:gap-20">
-        <SectionHeading id={id} eyebrow="Questions fréquentes" title={title} />
+        <div>
+          <SectionHeading id={id} eyebrow="Questions fréquentes" title={title} />
+          <p className="mt-6 leading-relaxed text-muted">
+            Vous ne trouvez pas votre réponse ?{" "}
+            <Link href="/contact" className="font-semibold text-brass-dark underline-offset-4 hover:text-forest-900 hover:underline">
+              Posez-nous votre question
+            </Link>
+            .
+          </p>
+        </div>
         <div className="border-t border-sand">
           {items.map((item) => (
             <details key={item.question} className="group border-b border-sand py-6">

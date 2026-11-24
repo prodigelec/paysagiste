@@ -48,6 +48,7 @@ export const entretienServices = [
     title: "Entretien de piscine",
     text: "Profitez d’une eau claire tout l’été. Nous assurons l’entretien courant de votre piscine, ainsi que sa mise en route au printemps et son hivernage à l’automne.",
     details: ["Nettoyage du bassin", "Contrôle de l’eau", "Mise en route de saison", "Hivernage"],
+    devis: "piscine",
     image: piscineImg,
     imagePosition: "object-[center_85%]", // photo verticale : cadrer sur le bassin
     alt: "Piscine bordée de végétation et d’un arbre au feuillage rouge",

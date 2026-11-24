@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig, devisHref } from "@/lib/site";
+import ButtonLink from "./ButtonLink";
 
 // En-tête des pages intérieures : photo, fil d’Ariane, titre et chapeau.
-export default function PageHero({ eyebrow, title, intro, image, imageAlt, breadcrumb }) {
+// `devis` : affiche les boutons « Demander un devis » (pré-rempli) et « Appeler ».
+export default function PageHero({ eyebrow, title, intro, image, imageAlt, breadcrumb, devis }) {
   return (
     <section className="relative isolate overflow-hidden bg-forest-900">
       <Image
@@ -35,6 +38,14 @@ export default function PageHero({ eyebrow, title, intro, image, imageAlt, bread
           <p className="eyebrow mb-5 text-brass-light">{eyebrow}</p>
           <h1 className="text-4xl text-on-dark sm:text-5xl lg:text-6xl">{title}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-on-dark-muted md:text-xl">{intro}</p>
+          {devis && (
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <ButtonLink href={devisHref(devis === true ? undefined : devis)}>Demander un devis gratuit</ButtonLink>
+              <ButtonLink href={siteConfig.phoneHref} variant="outlineLight">
+                Appeler le {siteConfig.phone}
+              </ButtonLink>
+            </div>
+          )}
         </div>
       </div>
     </section>
